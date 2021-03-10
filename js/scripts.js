@@ -46,73 +46,57 @@ function buttonClicked(clicked_id) {
 
 function check_if_won(){
     if (player1_moves.includes("11") && player1_moves.includes("12") && player1_moves.includes("13")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("21") && player1_moves.includes("22") && player1_moves.includes("23")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("31") && player1_moves.includes("32") && player1_moves.includes("33")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("11") && player1_moves.includes("22") && player1_moves.includes("33")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("13") && player1_moves.includes("22") && player1_moves.includes("31")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("11") && player1_moves.includes("21") && player1_moves.includes("31")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("12") && player1_moves.includes("22") && player1_moves.includes("32")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player1_moves.includes("13") && player1_moves.includes("23") && player1_moves.includes("33")){
-        var response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("11") && player2_moves.includes("12") && player2_moves.includes("13")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("21") && player2_moves.includes("22") && player2_moves.includes("23")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("31") && player2_moves.includes("32") && player2_moves.includes("33")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("11") && player2_moves.includes("22") && player2_moves.includes("33")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("13") && player2_moves.includes("22") && player2_moves.includes("31")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("11") && player2_moves.includes("21") && player2_moves.includes("31")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("12") && player2_moves.includes("22") && player2_moves.includes("32")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if (player2_moves.includes("13") && player2_moves.includes("23") && player2_moves.includes("33")){
-        var response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
-        return response;
+        response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
     }
     if ((player1_moves.length == 5 && player2_moves.length == 4) || (player1_moves.length == 4 && player2_moves.length == 5)) {
-        var response = "Ισσπαλία";
-        return response;
+        response = "Ισσπαλία";
+    }else {
+        response = "0";
     }
-    response = "0";
     return response;
 }
