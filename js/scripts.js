@@ -12,6 +12,7 @@ $(document).ready(function() {
         document.getElementById('message').append("Ο Πρώτος Παίχτης παίζει με το Χ και το Δεύτερος με το Ο");
         player_turn = 'player1';
         $("#choose").hide();
+        document.getElementById("player_turn").innerHTML = "Σειρά του Παίχτη 1";
     });
 
     $("#symbol2").click(function(){
@@ -20,8 +21,10 @@ $(document).ready(function() {
         document.getElementById('message').append("Ο Δεύτερος Παίχτης παίζει με το Χ και το Πρώτος με το Ο");
         player_turn = 'player2';
         $("#choose").hide();
+        document.getElementById("player_turn").innerHTML = "Σειρά του Παίχτη 2";
     });
 });
+
 function buttonClicked(clicked_id) {
     var response;
     document.getElementById(clicked_id).setAttribute("disabled","disabled");   
@@ -37,7 +40,7 @@ function buttonClicked(clicked_id) {
         player_turn = "player1";
         document.getElementById("player_turn").innerHTML = "Σειρά του Παίχτη 1";
     }
-    response = check_if_won(response);
+    response = check_if_won();
     if (response != "0") {
         alert (response);
         location.reload();
