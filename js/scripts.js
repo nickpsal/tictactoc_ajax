@@ -20,7 +20,7 @@ $(document).ready(function() {
     $("#symbol2").click(function(){
         player1_symbol = 'symbol2';
         player2_symbol = 'symbol1';
-        document.getElementById('message').append("Ο Δεύτερος Παίχτης παίζει με το Χ και το Πρώτος με το Ο");
+        document.getElementById('message').append("Ο Πρώτος Παίχτης παίζει με Ο και το Δεύτερος με το Χ");
         player_turn = 'player2';
         $("#choose").hide();
         document.getElementById("player_turn").innerHTML = "Σειρά του Παίχτη 2";

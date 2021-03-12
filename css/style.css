@@ -28,6 +28,10 @@ td{
     height: 100%;
 }
 
+.btn:disabled{
+    opacity: 0.9;
+}
+
 #A,#B,#C,#D,#E,#F,#G,#H,#I{
     width:200px;
     height: 200px;
