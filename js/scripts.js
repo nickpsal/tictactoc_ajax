@@ -4,6 +4,8 @@ var player_turn;
 var player1_moves = [];
 var player2_moves = [];
 $(document).ready(function() {
+    var d = new Date();
+    document.getElementById("footer").innerHTML = "© " + d.getFullYear() + " Created by Nikolaos Psaltakis";
     $("#choose").show();
 
     $("#symbol1").click(function(){
@@ -40,6 +42,7 @@ function buttonClicked(clicked_id) {
         player_turn = "player1";
         document.getElementById("player_turn").innerHTML = "Σειρά του Παίχτη 1";
     }
+    console.log(player1_moves,player2_moves);
     response = check_if_won();
     if (response != "0") {
         alert (response);
@@ -50,51 +53,67 @@ function buttonClicked(clicked_id) {
 function check_if_won(){
     if (player1_moves.includes("11") && player1_moves.includes("12") && player1_moves.includes("13")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("21") && player1_moves.includes("22") && player1_moves.includes("23")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("31") && player1_moves.includes("32") && player1_moves.includes("33")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("11") && player1_moves.includes("22") && player1_moves.includes("33")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("13") && player1_moves.includes("22") && player1_moves.includes("31")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("11") && player1_moves.includes("21") && player1_moves.includes("31")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("12") && player1_moves.includes("22") && player1_moves.includes("32")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player1_moves.includes("13") && player1_moves.includes("23") && player1_moves.includes("33")){
         response = "Νίκησε ο Πρώτος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("11") && player2_moves.includes("12") && player2_moves.includes("13")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("21") && player2_moves.includes("22") && player2_moves.includes("23")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("31") && player2_moves.includes("32") && player2_moves.includes("33")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("11") && player2_moves.includes("22") && player2_moves.includes("33")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("13") && player2_moves.includes("22") && player2_moves.includes("31")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("11") && player2_moves.includes("21") && player2_moves.includes("31")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("12") && player2_moves.includes("22") && player2_moves.includes("32")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if (player2_moves.includes("13") && player2_moves.includes("23") && player2_moves.includes("33")){
         response = "Νίκησε ο Δεύτερος Παίχτης!!!!!!!!"
+        return response;
     }
     if ((player1_moves.length == 5 && player2_moves.length == 4) || (player1_moves.length == 4 && player2_moves.length == 5)) {
         response = "Ισσπαλία";
